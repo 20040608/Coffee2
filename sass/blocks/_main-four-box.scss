@@ -1,0 +1,144 @@
+.main-four__inner{
+  margin: 15px 15px 50px 15px;
+  background-image: url('../images/qum.png');
+  background-repeat: repeat;
+  background-size: 100%;
+  background-color: #096A55;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+}
+
+.main-four-box {
+  padding-top: 50px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #FFFFFF;
+}
+
+.main-four-box-item {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-image: url('../images/chiziq.png');
+  background-repeat: no-repeat;
+  background-position: center left 40px;
+}
+
+.main-four-box-item::before{
+  position: absolute;
+  top: calc(-155px);
+  right: calc(58px) ;
+  display: block;
+  width: 255px;
+  height: 215px;
+  background-image: url('../images/mechta.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.main-four-box-item__in {
+  margin-right: 343px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #F8F8F2;
+  border: 4px solid #C99B67;
+  box-sizing: border-box;
+}
+
+.main-four-box-title {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-four-box-title__in {
+  width: 433px;
+  background-color: #FFFFFF;
+  margin: 15px;
+}
+
+.main-four-box-title__in-inner {
+  padding: 20px;
+  margin: 0;
+  text-align: right;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  font-variant: small-caps;
+  color: #333333;
+  opacity: 0.8;
+}
+
+.main-four-box-title__go{
+  width: 385px;
+  padding: 0px 20px 40px 20px;
+}
+
+.main-four-box-item-go {
+  width: 231px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  font-variant: small-caps;
+  color: #333333;
+}
+
+.main-four-box-item-go__in {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.main-four-box-text{
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.main-four-box-link{
+  padding: 16px 24px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  color: #FFFFFF;
+  background: #C99B67;
+  border-radius: 100px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .main-four__inner {
+    background-image: url('../images/qum@2x.png');
+  }
+  
+  .main-four-box-item {
+    background-image: url('../images/chiziq@2x.png');
+  }
+
+  .main-four-box-item::before{
+    background-image: url('../images/mechta@2x.png');
+  }
+} 

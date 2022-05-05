@@ -1,0 +1,42 @@
+.footer-in{
+  padding: 70px;
+  background-color: #F1D2AE ;
+  background-image: url('../images/qum.png');
+  background-blend-mode: overlay;
+  opacity: 0.9;
+}
+
+.footer-img{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer-box-in {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer-box-pic{
+  margin: 10px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .footer-in{
+    background-image: url('../images/qum@2x.png');
+  }
+} 

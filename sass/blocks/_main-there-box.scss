@@ -1,0 +1,113 @@
+.main-there__inner{
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 290px;
+  margin-left: 15px;
+}
+
+.main-there-box {
+  background-image: url('../images/qum.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #C79662;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+  height: 650px;
+  
+}
+.main-there-box__in-go{
+  text-align: center;
+  padding: 50px;
+}
+
+.main-there-box__in {
+  display: inline-block;
+  right: auto;
+  left: auto;
+  width: 581px;
+  align-items: center;
+}
+
+.main-there-box__in-inner {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #FFFFFF;
+}
+
+.main-there-box__in-inner__in {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main-there-item {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 15px;
+}
+
+.main-there-item::before{
+  position: absolute;
+  top: calc(-30px);
+  left: calc(-22px) ;
+  display: block;
+  width: 128px;
+  height: 135px;
+  background-image: url('../images/nimadir.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.main-there-item-in {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-there-item-in__inner {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  font-variant: small-caps;
+  color: #333333;
+}
+
+.main-there-item-in__inner-in {
+  width: 377px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .main-there-box {
+    background-image: url('../images/qum@2x.png');
+  }
+ 
+  .main-there-item::before{
+    background-image: url('../images/nimadir@2x.png');
+  }
+} 

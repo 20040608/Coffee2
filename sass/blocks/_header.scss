@@ -1,0 +1,52 @@
+.header__hero {
+  background: url('../images/qum.png');
+  background-blend-mode: overlay;
+  background-color: #F2D4B2;
+  opacity: 1.25;
+  padding: 20px;
+}
+
+.header-img{
+  text-align: center;
+  margin-top: 14px;
+}
+
+.header-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-item-in__in {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-title {
+  margin: 0;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .header__hero {
+    background: url('../images/qum@2x.png');
+  }
+} 

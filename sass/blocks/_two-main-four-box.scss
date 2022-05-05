@@ -1,0 +1,137 @@
+._main-four-box {
+  position: relative;
+  margin: 15px 15px 50px 15px;
+  background-image: url('../images/qum.png');
+  background-repeat: repeat;
+  background-size: 100%;
+  background-color: #096A55;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+}
+
+._main-four-box__in-go {
+  padding-top: 50px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps;
+  color: #FFFFFF;
+}
+
+._main-four-box--item {
+  position: relative;
+  padding: 0 0 100px 0 ;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+._main-four-box--item::before{
+  display: block;
+  position: absolute;
+  top: calc(45px);
+  left: calc(240px);
+  width: 120px;
+  height: 143px;
+  background-image: url('../images/uzb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+._main-four-box--item_in {
+  margin: 10px;
+  width: 400px;
+  height: 355px;
+  background-color: #F8F8F2;
+}
+
+._main-four-box--item_in__inner{
+  padding: 146px 0 40px 20px;
+}
+
+._main-four-box--item_in__inner-item{
+  padding: 100px 0 40px 20px;
+}
+
+._main-four-box--item_in-go {
+  width: 231px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  font-variant: small-caps;
+  color: #333333;
+}
+
+._main-four-box--item_in-go__in{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+._main-four-box--item_in-go__in__item{
+  position: relative;
+}
+
+._main-four-box--item_in-go__in__item::before{
+  display: block;
+  position: absolute;
+  top: calc(-160px);
+  left: calc(215px);
+  width: 120px;
+  height: 107px;
+  background-image: url('../../images/uzb2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+._main-four-box--item_in-go-item{
+  position: relative;
+}
+
+._main-four-box--item_in-go-item::before{
+  display: block;
+  position: absolute;
+  top: calc(-170px);
+  left: calc(215px);
+  width: 120px;
+  height: 107px;
+  background-image: url('../../images/uzb3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  ._main-four-box {
+    background-image: url('../images/qum@2x.png');
+  }
+
+  ._main-four-box--item::before{
+    background-image: url('../images/uzb@2x.png');
+  }
+
+  ._main-four-box--item_in-go__in__item::before{
+    background-image: url('../../images/uzb2@2x.png');
+  }
+
+  ._main-four-box--item_in-go-item::before{
+    background-image: url('../../images/uzb3@2x.png');
+  }
+} 

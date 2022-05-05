@@ -1,0 +1,64 @@
+.main-one-box--hero{
+  display: flex;
+  height: 590px;
+  background-image: url('../images/chashka.png'),  url('../images/qum.png') ;
+  background-repeat: no-repeat;
+  background-blend-mode: normal, overlay;
+  background-color: #F2D4B2;
+  background-size: 710px 596px, 100%;
+  background-position: calc(50% + 320px) bottom, center center;
+}
+
+.main-one-box_title--hero {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+}
+
+.main-one-box_in--hero{
+  width: 372px;
+  padding-top: 100px;
+  padding-left: 63px;
+}
+
+.main-one-box_title--hero::before{
+  display: block;
+  position: absolute;
+  top: calc(-170px);
+  left: calc(530px);
+  width: 160px;
+  height: 160px;
+  background-image: url('../images/olen.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.main-one-box_title_in--hero {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .main-one-box {
+    background-image: url('../images/chashka@2x.png'),  url('../images/qum@2x.png') ;
+  }
+
+  .main-one-box_title::before{
+    background-image: url('../images/olen@2x.png');
+  }
+} 

@@ -1,0 +1,68 @@
+._main-two-box {
+  padding: 100px 60px;
+  position: relative;
+  background-color: #F6F6EE;
+  margin: 15px;
+  background-image:   url('../images/qum2.png');
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+._main-two-box::before{
+  display: block; 
+  position: absolute;
+  top: calc(35px);
+  left: calc(-160px) ;
+  width: 300px;
+  height: 300px;
+  background-image: url('../images/ot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+._main-two-box__link{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+._main-two-box_inner {
+  width: 626px;
+  
+}
+._main-two-box_inner-in {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  font-variant: small-caps;
+  color: #000000;
+}
+._main-two-box_inner-go {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #333333;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  ._main-two-box {
+    background-image:   url('../images/qum2@2x.png');
+  }
+
+  ._main-two-box::before{
+    background-image: url('../images/ot@2x.png');
+  }
+
+} 

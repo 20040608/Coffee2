@@ -1,0 +1,79 @@
+.main-one-box {
+  display: flex;
+  height: 710px;
+  background-image: url('../images/cacao.png'),  url('../images/qum.png') ;
+  background-repeat: no-repeat;
+  background-blend-mode: normal, overlay;
+  background-color: #F2D4B2;
+  background-size: contain, 100%;
+  background-position: calc(50% + 320px) bottom, center center;
+}
+
+.main-one-box_in{
+  width: 512px;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+.main-one-box_title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+}
+
+.main-one-box_title::before{
+  display: block;
+  position: absolute;
+  top: calc(-165px);
+  left: calc(530px) ;
+  width: 160px;
+  height: 160px;
+  background-image: url('../images/olen.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.main-one-box_title_in {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.main-one-box_link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  color: #FFFFFF;
+  background: #0A775F;
+  border-radius: 100px;
+  padding: 16px 24px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .main-one-box {
+    background-image: url('../images/cacao@2x.png'),  url('../images/qum@2x.png') ;
+  }
+
+  .main-one-box_title::before{
+    background-image: url('../images/olen@2x.png');
+  }
+} 
